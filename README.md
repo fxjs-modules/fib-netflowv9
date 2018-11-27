@@ -6,6 +6,10 @@ NetFlow Version 10 (IPFix) is next (a lot of the IPFIX types are implemented alr
 
 The library is still under development, please be careful! It has been tested with Cisco IOS XR and IPv4 although it must work with IPv6 too! Please log problems in the issues section!
 
+## install
+
+    npm install @fxjs/fib-netflowv9
+    
 ## Usage
 
 The usage of the netflowv9 collector library is very very simple. You just have to do something like this:
