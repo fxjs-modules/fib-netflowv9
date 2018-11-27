@@ -9,13 +9,13 @@ The library is still under development, please be careful! It has been tested wi
 ## install
 
     npm install @fxjs/fib-netflowv9
-    
+
 ## Usage
 
 The usage of the netflowv9 collector library is very very simple. You just have to do something like this:
 
 
-    var Collector = require('fib-netflowv9');
+    var Collector = require('@fxjs/fib-netflowv9');
 
     Collector(function(flow) {
         console.log(flow);
@@ -82,7 +82,7 @@ Additionally, you can use the collector to listen for template updates:
 
 You can also access a NetFlow decode function directly. Do something like this:
 
-    var netflowPktDecoder = require('fib-netflowv9').nfPktDecode;
+    var netflowPktDecoder = require('@fxjs/fib-netflowv9').nfPktDecode;
     ....
     console.log(netflowPktDecoder(buffer))
 
@@ -261,7 +261,7 @@ You can use the debug module to turn on the logging, in order to debug how the l
 The following example show you how:
 
     require('debug').enable('NetFlowV9');
-    var Collector = require('fib-netflowv9');
+    var Collector = require('@fxjs/fib-netflowv9');
     Collector(function(flow) {
         console.log(flow);
     }).listen(5555);
@@ -273,7 +273,7 @@ The netflow module allows being configured as proxy and to resend the netflow pa
 You can do that by using the proxy option in the configurations. For example:
 
     require('debug').enable('NetFlowV9');
-    var Collector = require('fib-netflowv9');
+    var Collector = require('@fxjs/fib-netflowv9');
     Collector({
         proxy: "127.0.0.1:55555", // It could be as well array or object if you need multiple destinations
         cb: function(flow) {
@@ -286,7 +286,7 @@ In the example above every netflow packet received at port 5555 will be resent a
 The examples bellow resends the packets to multiple destinations:
 
     require('debug').enable('NetFlowV9');
-    var Collector = require('fib-netflowv9');
+    var Collector = require('@fxjs/fib-netflowv9');
     Collector({
         proxy: [ "127.0.0.1:55555","5.5.5.5:5566" ],
         cb: function(flow) {
@@ -297,7 +297,7 @@ The examples bellow resends the packets to multiple destinations:
 Another example with multiple destinations:
 
     require('debug').enable('NetFlowV9');
-    var Collector = require('fib-netflowv9');
+    var Collector = require('@fxjs/fib-netflowv9');
     Collector({
         proxy: {
           "target1": "127.0.0.1:55555",
@@ -315,7 +315,7 @@ Another example with multiple destinations:
 The module allows you to define multiple collectors at the same time.
 For example:
 
-    var Collector = require('fib-netflowv9');
+    var Collector = require('@fxjs/fib-netflowv9');
 
     Collector(function(flow) { // Collector 1 listening on port 5555
         console.log(flow);
