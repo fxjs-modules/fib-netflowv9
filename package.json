@@ -1,0 +1,25 @@
+{
+    "name": "fib-netflow",
+    "version": "1.0.0",
+    "description": "netflow for fibjs",
+    "main": "lib",
+    "author": "Asion <asionius92@gmail.com>",
+    "license": "MIT",
+    "keywords": [
+        "netflow",
+        "fibjs"
+    ],
+    "scripts": {
+        "ci": "fibjs test"
+    },
+    "ci": {
+        "type": "travis"
+    },
+    "dependencies": {
+        "node-netflowv9": "^0.2.16"
+    },
+    "devDependencies": {
+        "@fibjs/ci": "^1.0.0",
+        "lodash": "^4.17.4"
+    }
+}
