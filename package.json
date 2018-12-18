@@ -1,5 +1,5 @@
 {
-  "name": "@fxjs/fib-netflowv9",
+  "name": "@fxjs/netflow",
   "version": "1.0.0",
   "description": "netflow for fibjs",
   "main": "lib",
@@ -24,10 +24,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fxjs-modules/fib-netflowv9.git"
+    "url": "git+https://github.com/fxjs-modules/netflow.git"
   },
   "bugs": {
-    "url": "https://github.com/fxjs-modules/fib-netflowv9/issues"
+    "url": "https://github.com/fxjs-modules/netflow/issues"
   },
-  "homepage": "https://github.com/fxjs-modules/fib-netflowv9#readme"
+  "homepage": "https://github.com/fxjs-modules/netflow#readme"
 }

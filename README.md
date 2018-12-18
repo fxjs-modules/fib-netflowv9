@@ -1,18 +1,18 @@
-fib-netflowv9
+netflow
 ==============
 
 NetFlow Version 5 library for Fibjs
 
 ## install
 
-    npm install @fxjs/fib-netflowv9
+    npm install @fxjs/netflow
 
 ## Usage
 
 The usage of the netflowv9 collector library is very very simple. You just have to do something like this:
 
 
-    let Collector = require('@fxjs/fib-netflowv9');
+    let Collector = require('@fxjs/netflow');
 
     let co = new Collector(3000, function(flow) {
         console.log(flow);
@@ -108,7 +108,7 @@ Or
 The module allows you to define multiple collectors at the same time.
 For example:
 
-    var Collector = require('@fxjs/fib-netflowv9');
+    var Collector = require('@fxjs/netflow');
 
     new Collector(5555, function(flow) { // Collector 1 listening on port 5555
         console.log(flow);
