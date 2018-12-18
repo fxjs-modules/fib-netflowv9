@@ -15,9 +15,6 @@
   "ci": {
     "type": "travis"
   },
-  "dependencies": {
-    "node-netflowv9": "^0.2.16"
-  },
   "devDependencies": {
     "@fibjs/ci": "^1.0.0"
   },
